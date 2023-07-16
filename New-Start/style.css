@@ -80,10 +80,7 @@ body {
 #demo3 {
   padding: 50px 0;
 }
-#demo3 .box {
-  margin: 30px 0;
-}
-#demo3 .box .minibox {
+#demo3 .minibox {
   width: 100px;
   height: 100px;
   border: 3px solid black;
@@ -92,19 +89,29 @@ body {
   margin: 10px;
   transition: 5s;
 }
-#demo3 .box .mini1:hover {
+#demo3 .mini1:hover {
   transform: translate(300px, 200px);
   background: purple;
 }
-#demo3 .box .mini2:hover {
+#demo3 .mini2:hover {
   transform: translateY(400px);
   background: yellow;
 }
-#demo3 .box .mini3:hover {
+#demo3 .mini3:hover {
   transform: translateY(-400px);
   background: green;
 }
-#demo3 .box .mini4:hover {
+#demo3 .mini4:hover {
   transform: translate(300px, -200px);
   background: blue;
+}
+@media screen and (max-width: 1200px) {
+  #demo3 .minibox {
+    width: 80px;
+    height: 80px;
+    border: 5px solid black;
+    background: #289fc6;
+    margin: 10px;
+    border-radius: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
