@@ -6,10 +6,7 @@ body {
 #demo1 {
   padding: 50px 0;
 }
-#demo1 .box {
-  margin: 30px 0;
-}
-#demo1 .box .minibox {
+#demo1 .minibox {
   margin: 10px;
   width: 100px;
   height: 100px;
@@ -20,13 +17,38 @@ body {
   background: #ea9413;
   transition: 2s;
 }
-#demo1 .box .minibox:hover {
+#demo1 .minibox:hover {
   width: 300px;
   height: 150px;
   font-size: 30px;
   border: 5px solid black;
   color: #000;
   transform: rotate(45deg);
+}
+@media screen and (min-width: 800px) {
+  #demo1 .minibox {
+    width: 500px;
+    background: #45ca7d;
+    border: 5px solid #260c59;
+    transition: 1s;
+  }
+  #demo1 .minibox:hover {
+    transform: rotate(0);
+    color: #000;
+  }
+}
+@media screen and (min-width: 1500px) {
+  #demo1 .minibox {
+    width: 600px;
+    height: 200px;
+    border-radius: 70px;
+    transform: translateX(100px);
+    background: #eb106f;
+    padding: 30px;
+    color: white;
+    font-size: 40px;
+    margin: 5px;
+  }
 }
 
 #demo2 {
